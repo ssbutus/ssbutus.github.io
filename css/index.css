@@ -137,12 +137,12 @@ ul {
 }
 
 #loop1 {
-    animation: loop1 50s -25s linear infinite;
+    animation: loop1 100s -50s linear infinite;
     padding: 0;
 }
 
 #loop2 {
-    animation: loop2 50s linear infinite;
+    animation: loop2 100s linear infinite;
     padding: 0;
 }
 
@@ -205,6 +205,10 @@ ul {
     .twitter-timeline {
         margin: auto;
     }
+    
+    #member-icon {
+        width: 125px;
+    }
 }
 
 @media screen and (max-height: 479px) {
@@ -230,6 +234,10 @@ ul {
 
     .twitter-timeline {
         margin: auto;
+    }
+
+    #member-icon {
+        width: 125px;
     }
 }
 
