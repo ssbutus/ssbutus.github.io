@@ -16,6 +16,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: white;
+}
+
 p { 
     margin: 0;
     color: white;
@@ -58,8 +62,8 @@ ul {
 
 #video-container {
     z-index: -100;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     overflow: hidden;
     position: fixed;
 }
@@ -88,7 +92,7 @@ ul {
     background: url("../img/yokojima.png");
 }
 
-.pages {
+#introduction {
     width: 100vw;
     height: 100vh;
 }
@@ -106,15 +110,96 @@ ul {
     border-radius: 50%;
 }
 
-.introduction-description {
+#description {
+    width: auto;
+    height: auto;
+    margin: 5% 10%;
+    background-color: black;
+    display: flex;
+    padding: 3%;
+    text-align: center;
+}
+
+#member-list {
+    margin: 5% 0;
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+#member {
+    display: inline;
+}
+
+#loop1 {
+    animation: loop1 50s -25s linear infinite;
+    padding: 0;
+}
+
+#loop2 {
+    animation: loop2 50s linear infinite;
+    padding: 0;
+}
+
+@keyframes loop1 {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  
+@keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+}
+
+#member-icon {
+    border-radius: 50%;
+    margin: 0 20px;
+    width: 250px;
+    height: auto;
+}
+
+.box {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.description-text {
+    margin: 0 auto;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 479px) {
     header {
         display: none;
     }
+
     p {
         font-size: 1rem;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+
+    #description {
+        display: block;
+    }
+
+    .twitter-timeline {
+        margin: auto;
     }
 }
 
@@ -122,8 +207,25 @@ ul {
     header {
         display: none;
     }
+ 
     p {
         font-size: 1rem;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+  
+    #description {
+        display: block;
+    }
+
+    .twitter-timeline {
+        margin: auto;
     }
 }
 
