@@ -128,7 +128,7 @@ ul {
     height: auto;
 }
 
-#member-List:hover ul {
+#member-list:hover ul {
     animation-play-state: paused;
 }
 
