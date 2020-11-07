@@ -137,36 +137,6 @@ ul {
     display: inline;
 }
 
-#loop1 {
-    transform: translateX(100%);
-    animation: loop1 100s -50s linear infinite;
-    padding: 0;
-}
-
-#loop2 {
-    transform: translateX(0);
-    animation: loop2 100s linear infinite;
-    padding: 0;
-}
-
-@keyframes loop1 {
-    0% {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-}
-  
-@keyframes loop2 {
-    0% {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-200%);
-    }
-}
-
 #member-icon {
     border-radius: 50%;
     margin: 0 20px;

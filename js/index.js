@@ -33,5 +33,12 @@ window.onload = function() {
         loop2.appendChild(copy1_li);
         });
     }
+
+    const head = document.getElementsByTagName("head")[0];
+    const styleElement = document.createElement("link");
+    styleElement.setAttribute("href", "./css/loopAnimation.css");
+    styleElement.setAttribute("rel", "stylesheet");
+
+    head.appendChild(styleElement);
 }
 
