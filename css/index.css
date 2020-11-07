@@ -128,6 +128,10 @@ ul {
     height: auto;
 }
 
+#member-List:hover ul {
+    animation-play-state: paused;
+}
+
 #member {
     display: inline;
 }
