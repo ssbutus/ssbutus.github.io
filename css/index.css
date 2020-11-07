@@ -121,11 +121,12 @@ ul {
 }
 
 #member-list {
-    margin: 5% 0;
+    margin: 5% 5%;
     overflow: hidden;
     display: flex;
-    width: 100vw;
+    width: auto;
     height: auto;
+    background-color: white;
 }
 
 #member-list:hover ul {
@@ -137,11 +138,13 @@ ul {
 }
 
 #loop1 {
+    transform: translateX(100%);
     animation: loop1 100s -50s linear infinite;
     padding: 0;
 }
 
 #loop2 {
+    transform: translateX(0);
     animation: loop2 100s linear infinite;
     padding: 0;
 }
@@ -209,6 +212,14 @@ ul {
     #member-icon {
         width: 125px;
     }
+    
+    #member-list {
+        margin: 5% 0;
+    }
+
+    #member-list:hover ul {
+        animation-play-state: running;
+    }
 }
 
 @media screen and (max-height: 479px) {
@@ -238,6 +249,14 @@ ul {
 
     #member-icon {
         width: 125px;
+    }
+
+    #member-list {
+        margin: 5% 0;
+    }
+
+    #member-list:hover ul {
+        animation-play-state: running;
     }
 }
 
