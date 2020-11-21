@@ -2,9 +2,6 @@ window.onload = function() {
     setTimeout(() => {
         const loadingDisplay = document.getElementById("loading");
         loadingDisplay.classList.add("fadeout");
-        setTimeout(() => {
-            loadingDisplay.style.display = "none";
-        }, 1000);
     }, 1000);
 
     const memberList = [
@@ -42,3 +39,17 @@ window.onload = function() {
     head.appendChild(styleElement);
 }
 
+window.onscroll = function() {
+    const scrollTop = 
+        document.documentElement.scrollTop || document.body.scrollTop;
+
+    const header = document.getElementsByTagName("header")[0];
+
+    if(scrollTop > 300) {
+        header.classList.remove("fadeout-header");
+        header.classList.add("fadein-header");
+    } else {
+        header.classList.remove("fadein-header");
+        header.classList.add("fadeout-header");
+    }
+}
