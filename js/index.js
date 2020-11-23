@@ -45,7 +45,9 @@ window.onscroll = function() {
 
     const header = document.getElementsByTagName("header")[0];
 
-    if(scrollTop > 300) {
+    const innerHeight = window.innerHeight;
+
+    if(scrollTop > (innerHeight * (4 / 5))) {
         header.classList.remove("fadeout-header");
         header.classList.add("fadein-header");
     } else {
