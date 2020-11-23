@@ -126,7 +126,7 @@ ul {
     width: auto;
     height: auto;
     margin: 5% 10%;
-    background-color: black;
+    background: rgba(0,0,0,0.5);
     display: flex;
     padding: 3%;
     text-align: center;
@@ -251,11 +251,6 @@ ul {
     animation-fill-mode: both;
 }
 
-.fadein {
-    animation: FadeIn 0.5s;
-    animation-fill-mode: both;
-}
-
 .fadeout-header {
     animation: FadeOutHeader 0.5s;
     animation-fill-mode: both;
@@ -272,7 +267,7 @@ ul {
     }
     100% {
         opacity: 0;
-        display: none;
+        visibility:hidden;
     }
 }
 
