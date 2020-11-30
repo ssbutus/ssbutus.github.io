@@ -96,7 +96,7 @@ ul {
 }
 
 .contents-list-item:hover {
-    background-color: #CCCCCC;
+    background-color: #cccccc;
 }
 
 .contents-list-item * {
@@ -144,31 +144,6 @@ ul {
     border-radius: 20px;
 }
 
-#member-list {
-    margin: 3% 3%;
-    overflow: hidden;
-    display: flex;
-    width: auto;
-    height: auto;
-    border-radius: 20px;
-}
-
-#member-list:hover ul {
-    animation-play-state: paused;
-}
-
-#member {
-    display: inline;
-}
-
-#member-icon {
-    border-radius: 50%;
-    margin: 0 20px;
-    padding: 0;
-    width: 250px;
-    height: auto;
-}
-
 .box {
     margin: 0 auto;
     width: 50%;
@@ -177,6 +152,83 @@ ul {
 .description-text {
     margin: 0 auto;
     font-size: 1.3rem;
+}
+
+#members {
+    position: relative;
+}
+
+#member-list {
+    position: relative;
+    left: 50%;
+    float: left;
+    margin: 2% 0;
+    width: auto;
+    height: auto;
+}
+
+.member {
+    position: relative; 
+    left: -50%;
+    background-color: #252525;
+    min-width: 200px;
+    min-height: 100px;
+    text-align: center;
+    user-select: none;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+    margin: 10px;
+    float: left;
+}
+
+.name {
+    position: relative;
+}
+
+.name p {
+    color: white;
+    font-weight: 600;
+    line-height: 100px;
+    margin: auto;
+    font-size: 1.4rem;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+}
+
+.chara-icon {
+    opacity: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: 0;
+    z-index: 3;
+    position: absolute;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    pointer-events: none;
+}
+
+.member:hover {
+    background-color: white;
+    opacity: 90%;
+}
+
+.member:hover p {
+    color: black;
+    opacity: 90%;
+}
+
+.member:hover .chara-icon {
+    opacity: 100%;
+}
+
+#cb {
+    clear: both;
+}
+
+#access {
+    margin: 2% 0;
 }
 
 #access-contents {

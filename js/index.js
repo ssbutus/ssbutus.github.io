@@ -5,31 +5,45 @@ window.onload = function() {
     }, 1000);
 
     const memberList = [
-        "araburu_chrooom", "mokuroteresa", "pf35301", "Ryo_9726", "warawaramoti", "jonsqueeze"
+        ["pi629", "Pokemon"],
+        ["ズや", "FireEmblem"],
+        ["グーよん", "Mario"],
+        ["ぬかちゃん", "Metroid"],
+        ["まっすー", "FireEmblem"],
+        ["mune", "StarFox"],
+        ["あらぶるペンギン", "FireEmblem"],
+        ["Raito", "Persona"],
+        ["りんごまん", "MetalGear"],
+        ["たた", "StreetFighter"],
     ];
-    
-/*     const loop1 = document.getElementById("loop1");
-    const loop2 = document.getElementById("loop2");
 
-    for(let i = 0; i < 2; i++) {
-        memberList.forEach(member => {
-        const li = document.createElement("li");
-        const element = document.createElement("a");
-        element.setAttribute("href", "https://twitter.com/" + member);
-        element.setAttribute("target", "_blank");
-        element.setAttribute("id", "member");
-        const iconElement = document.createElement("img");
-        iconElement.setAttribute("alt", "Twitter");
-        iconElement.setAttribute("src", "./img/members/" + member + ".jpg");
-        iconElement.setAttribute("id", "member-icon");
-    
-        element.appendChild(iconElement);
-        li.appendChild(element);
-        const copy1_li = li.cloneNode(true);
-        loop1.appendChild(li);
-        loop2.appendChild(copy1_li);
-        });
-    } */
+    const memberListElem = document.getElementById("member-list");
+
+    memberList.forEach(member => {
+        const memberElem = document.createElement("div");
+        memberElem.setAttribute("ontouchstart", "");
+        memberElem.setAttribute("class", "member");
+
+        const nameElem = document.createElement("div");
+        nameElem.setAttribute("class", "name");
+
+        const pElem = document.createElement("p");
+        pElem.textContent = member[0];
+        const charaIconElem = document.createElement("div");
+        charaIconElem.setAttribute("class", "chara-icon");
+
+        const icon = document.createElement("img");
+        icon.setAttribute("src", "./img/CHaraIcon/" + member[1] + ".svg");
+
+        charaIconElem.appendChild(icon);
+
+        nameElem.appendChild(charaIconElem);
+        nameElem.appendChild(pElem);
+
+        memberElem.appendChild(nameElem);
+
+        memberListElem.appendChild(memberElem);
+    });
 
     const head = document.getElementsByTagName("head")[0];
     const styleElement = document.createElement("link");
