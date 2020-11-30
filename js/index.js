@@ -8,7 +8,7 @@ window.onload = function() {
         "araburu_chrooom", "mokuroteresa", "pf35301", "Ryo_9726", "warawaramoti", "jonsqueeze"
     ];
     
-    const loop1 = document.getElementById("loop1");
+/*     const loop1 = document.getElementById("loop1");
     const loop2 = document.getElementById("loop2");
 
     for(let i = 0; i < 2; i++) {
@@ -29,7 +29,7 @@ window.onload = function() {
         loop1.appendChild(li);
         loop2.appendChild(copy1_li);
         });
-    }
+    } */
 
     const head = document.getElementsByTagName("head")[0];
     const styleElement = document.createElement("link");
@@ -37,6 +37,29 @@ window.onload = function() {
     styleElement.setAttribute("rel", "stylesheet");
 
     head.appendChild(styleElement);
+
+    document.getElementById("header-top").onclick = function() { HeaderListOnClick("introduction") };
+    document.getElementById("header-activity").onclick = function() { HeaderListOnClick("description") };
+    document.getElementById("header-way-to-participate").onclick = function() { HeaderListOnClick("description") };
+    document.getElementById("header-members").onclick = function() { HeaderListOnClick("members") };
+    document.getElementById("header-access").onclick = function() { HeaderListOnClick("access") };
+}
+
+function HeaderListOnClick(targetName) {
+    console.log(targetName);
+
+    const headerHeight = document.getElementsByTagName("header")[0].clientHeight;
+
+    const targetTop = (document.getElementById(targetName).getBoundingClientRect().top - headerHeight);
+    console.log(targetTop);
+    console.log(headerHeight);
+
+    const scrollOptions = {
+        top: targetTop,
+        behavior: "smooth"
+    }
+
+    window.scrollBy(scrollOptions);
 }
 
 window.onscroll = function() {
