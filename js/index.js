@@ -7,14 +7,21 @@ window.onload = function() {
     const memberList = [
         ["pi629", "Pokemon"],
         ["ズや", "FireEmblem"],
-        ["グーよん", "Mario"],
+        ["グーヨン", "Mario"],
         ["ぬかちゃん", "Metroid"],
         ["まっすー", "FireEmblem"],
         ["mune", "StarFox"],
         ["あらぶるペンギン", "FireEmblem"],
         ["Raito", "Persona"],
+        ["ゅゅゅ", ""],
         ["りんごまん", "MetalGear"],
         ["たた", "StreetFighter", "pf35301"],
+        ["ウォッチA96992", "Pokemon"],
+        ["kaz", "Yoshi"],
+        ["TaK", "FireEmblem"],
+        ["しまゆう", "Mario"],
+        ["Zafkiel", "KidIcarus"],
+        ["ふるばす", "Persona"],
     ];
 
     const memberListElem = document.getElementById("member-list");
