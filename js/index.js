@@ -52,13 +52,6 @@ window.onload = function() {
         memberListElem.appendChild(memberElem);
     });
 
-    const head = document.getElementsByTagName("head")[0];
-    const styleElement = document.createElement("link");
-    styleElement.setAttribute("href", "./css/loopAnimation.css");
-    styleElement.setAttribute("rel", "stylesheet");
-
-    head.appendChild(styleElement);
-
     document.getElementById("header-top").onclick = function() { HeaderListOnClick("introduction") };
     document.getElementById("header-activity").onclick = function() { HeaderListOnClick("description") };
     document.getElementById("header-way-to-participate").onclick = function() { HeaderListOnClick("description") };
