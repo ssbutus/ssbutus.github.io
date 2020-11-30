@@ -46,13 +46,9 @@ window.onload = function() {
 }
 
 function HeaderListOnClick(targetName) {
-    console.log(targetName);
-
     const headerHeight = document.getElementsByTagName("header")[0].clientHeight;
 
     const targetTop = (document.getElementById(targetName).getBoundingClientRect().top - headerHeight);
-    console.log(targetTop);
-    console.log(headerHeight);
 
     const scrollOptions = {
         top: targetTop,
