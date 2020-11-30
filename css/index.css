@@ -83,16 +83,27 @@ ul {
 #contents-list {
     height: 100%;
     float: right;
+    user-select: none;
 }
 
 .contents-list-item {
     width: 100px;
-    margin: auto;
+    padding: auto;
     display: inline;
-    text-align: center;    
+    text-align: center;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
 }
 
-#header- {
+.contents-list-item:hover {
+    background-color: #CCCCCC;
+}
+
+.contents-list-item * {
+    line-height: 70px;
+}
+
+#header-access {
     margin-right: 100px;
 }
 
@@ -165,7 +176,7 @@ ul {
 
 .description-text {
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #access-contents {
