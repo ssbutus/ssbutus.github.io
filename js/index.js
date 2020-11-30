@@ -13,7 +13,7 @@ window.onload = function() {
         ["mune", "StarFox"],
         ["あらぶるペンギン", "FireEmblem"],
         ["Raito", "Persona"],
-        ["ゅゅゅ", ""],
+        ["ゅゅゅ", "DK"],
         ["りんごまん", "MetalGear"],
         ["たた", "StreetFighter", "pf35301"],
         ["ウォッチA96992", "Pokemon"],
