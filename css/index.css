@@ -1,6 +1,12 @@
+html{
+    overflow-x : hidden;
+    overflow-y : auto;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
+    overflow-y : auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
     background-color: black;
@@ -155,21 +161,17 @@ ul {
 }
 
 #members {
-    position: relative;
 }
 
 #member-list {
-    position: relative;
-    left: 50%;
-    float: left;
-    margin: 2% 0;
+    text-align: center;
+    margin: 2% auto;
     width: auto;
     height: auto;
 }
 
 .member {
-    position: relative; 
-    left: -50%;
+    display: inline-block;
     background-color: #252525;
     min-width: 200px;
     min-height: 100px;
@@ -178,7 +180,6 @@ ul {
     -webkit-transition: all .3s;
     transition: all .3s; 
     margin: 10px;
-    float: left;
 }
 
 .name {
