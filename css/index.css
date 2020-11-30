@@ -237,12 +237,13 @@ ul {
     height: auto;
     text-align: center;
     overflow: hidden;
-    display: flex;
     margin: 30px 0;
 }
 
 .access-content {
-    margin: 0 auto;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
 }
 
 .map {

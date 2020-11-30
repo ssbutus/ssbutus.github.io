@@ -14,12 +14,13 @@ window.onload = function() {
         ["あらぶるペンギン", "FireEmblem"],
         ["Raito", "Persona"],
         ["りんごまん", "MetalGear"],
-        ["たた", "StreetFighter"],
+        ["たた", "StreetFighter", "pf35301"],
     ];
 
     const memberListElem = document.getElementById("member-list");
 
     memberList.forEach(member => {
+        console.log(member[2]);
         const memberElem = document.createElement("div");
         memberElem.setAttribute("ontouchstart", "");
         memberElem.setAttribute("class", "member");
