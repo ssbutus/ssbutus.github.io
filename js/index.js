@@ -33,7 +33,7 @@ window.onload = function() {
         charaIconElem.setAttribute("class", "chara-icon");
 
         const icon = document.createElement("img");
-        icon.setAttribute("src", "./img/CHaraIcon/" + member[1] + ".svg");
+        icon.setAttribute("src", "./img/CharaIcon/" + member[1] + ".svg");
 
         charaIconElem.appendChild(icon);
 
