@@ -1,0 +1,398 @@
+html{
+    overflow-x : hidden;
+    overflow-y : auto;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y : auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: black;
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+p { 
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    text-align: right;
+    opacity: 0;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.title {
+    color: white;
+}
+
+#loading {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#loading-icon {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#video-container {
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+#background-video {
+    position: fixed;
+    z-index: -100;
+    opacity: 60%;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contents-list {
+    height: 100%;
+    float: right;
+    user-select: none;
+}
+
+.contents-list-item {
+    width: 100px;
+    padding: auto;
+    display: inline;
+    text-align: center;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+}
+
+.contents-list-item:hover {
+    background-color: #cccccc;
+}
+
+.contents-list-item * {
+    line-height: 70px;
+}
+
+#header-access {
+    margin-right: 100px;
+}
+
+#cover {
+    z-index: -99;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/yokojima.png");
+}
+
+#introduction {
+    width: 100vw;
+    height: 100vh;
+}
+
+#introduction {
+    text-align: center;
+}
+
+#icon {
+    margin: 0 auto;
+    display: block;
+    padding: 10% 0;
+    height: 30%;
+    width: auto;
+    border-radius: 50%;
+}
+
+#description {
+    width: auto;
+    height: auto;
+    margin: 5% 10%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    padding: 3%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.box {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.description-text {
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+#member-list {
+    text-align: center;
+    margin: 2% auto;
+    width: auto;
+    height: auto;
+}
+
+.member {
+    display: inline-block;
+    background-color: #252525;
+    min-width: 200px;
+    min-height: 100px;
+    text-align: center;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+    margin: 10px;
+    position: relative;
+}
+
+.member a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+.name {
+    position: relative;
+}
+
+.name p {
+    color: white;
+    font-weight: 600;
+    line-height: 100px;
+    margin: auto;
+    font-size: 1.4rem;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+}
+
+.chara-icon {
+    opacity: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: 0;
+    z-index: 3;
+    position: absolute;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    pointer-events: none;
+}
+
+.member:hover {
+    background-color: white;
+    opacity: 90%;
+}
+
+.member:hover p {
+    color: black;
+    opacity: 90%;
+}
+
+.member:hover .chara-icon {
+    opacity: 100%;
+}
+
+#cb {
+    clear: both;
+}
+
+#access {
+    margin: 2% 0;
+}
+
+#access-contents {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.access-content {
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+}
+
+.map {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+#twitter-widget-0 {
+    min-height: 400px !important;
+    min-width: 400px !important;
+}
+
+@media screen and (max-width: 479px) {
+    header {
+        display: none;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+
+    #description {
+        display: block;
+        margin: 5% 5%;
+    }
+
+    .twitter-timeline {
+        margin: auto;
+    }
+    
+    #member-icon {
+        width: 125px;
+    }
+    
+    #member-list {
+        margin: 5% 0;
+    }
+
+    #member-list:hover ul {
+        animation-play-state: running;
+    }
+
+    #access-contents {
+        display: inline;
+    }
+}
+
+@media screen and (max-height: 479px) {
+    header {
+        display: none;
+    }
+ 
+    p {
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+  
+    #description {
+        display: block;
+        margin: 5% 5%;
+    }
+
+    .twitter-timeline {
+        margin: auto;
+    }
+
+    #member-icon {
+        width: 125px;
+    }
+
+    #member-list {
+        margin: 5% 0;
+    }
+
+    #member-list:hover ul {
+        animation-play-state: running;
+    }
+
+    #access-contents {
+        display: inline;
+    }
+}
+
+.fadeout {
+    animation: FadeOut 0.5s;
+    animation-fill-mode: both;
+}
+
+.fadeout-header {
+    animation: FadeOutHeader 0.5s;
+    animation-fill-mode: both;
+}
+
+.fadein-header {
+    animation: FadeInHeader 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility:hidden;
+    }
+}
+
+@keyframes FadeOutHeader {
+    0% {
+        opacity: 1;
+        height: 70px;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        height: 0px;
+    }
+}
+
+@keyframes FadeInHeader {
+    0% {
+        opacity: 0;
+        height: 0px;
+    }
+    100% {
+        opacity: 1;
+        display: flex;
+        height: 70px;
+    }
+}
