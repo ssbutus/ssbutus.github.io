@@ -4,19 +4,20 @@ window.onload = function() {
         loadingDisplay.classList.add("fadeout");
     }, 1000);
 
+    //["name", "Icon", "twitter"]
     const memberList = [
         ["pi629", "Pokemon"],
-        ["ズや", "FireEmblem"],
+        ["ズヤ", "FireEmblem"],
         ["グーヨン", "Mario"],
         ["ぬかちゃん", "Metroid"],
         ["まっすー", "FireEmblem"],
         ["mune", "StarFox"],
         ["あらぶるペンギン", "FireEmblem"],
-        ["Raito", "Persona"],
+        ["あきお", "Persona"],
         ["ゅゅゅ", "DK"],
         ["かなん", "Earthbound"],
         ["りんごまん", "MetalGear"],
-        ["たた", "StreetFighter", "pf35301"],
+        ["たた", "StreetFighter"],
         ["ウォッチA96992", "Pokemon"],
         ["kaz", "Yoshi"],
         ["TaK", "FireEmblem"],
