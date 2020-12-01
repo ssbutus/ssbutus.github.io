@@ -14,7 +14,7 @@ window.onload = function() {
         ["あらぶるペンギン", "FireEmblem"],
         ["Raito", "Persona"],
         ["ゅゅゅ", "DK"],
-        ["かなん", "EarthBound"],
+        ["かなん", "Earthbound"],
         ["りんごまん", "MetalGear"],
         ["たた", "StreetFighter", "pf35301"],
         ["ウォッチA96992", "Pokemon"],
