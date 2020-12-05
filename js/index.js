@@ -10,6 +10,7 @@ window.onload = function() {
         ["ズヤ", "FireEmblem"],
         ["グーヨン", "Mario"],
         ["ぬかちゃん", "Metroid"],
+        ["ヌマ", "Zelda"],
         ["まっすー", "FireEmblem"],
         ["mune", "StarFox"],
         ["あらぶるペンギン", "FireEmblem"],
