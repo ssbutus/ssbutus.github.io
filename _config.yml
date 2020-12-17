@@ -1,2 +1,15 @@
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
+theme: jekyll-theme-cayman
+twitter:
+  username: ssbutus
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: ./img/icon-shiek.jpg
+        height: 1000
+        width: 1000
